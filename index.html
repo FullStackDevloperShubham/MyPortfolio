@@ -37,6 +37,23 @@
 
     <!-- tech stack css -->
     <style>
+        /* disable the select  */
+        body {
+            -webkit-touch-callout: none;
+            /* iOS Safari */
+            -webkit-user-select: none;
+            /* Safari */
+            -khtml-user-select: none;
+            /* Konqueror HTML */
+            -moz-user-select: none;
+            /* Firefox */
+            -ms-user-select: none;
+            /* Internet Explorer/Edge */
+            user-select: none;
+            /* Non-prefixed version, currently supported by Chrome, Edge, Opera, Firefox */
+        }
+
+        /* here it end */
         .tech-stack {
             /* border: 1px solid #ccc; */
             /* border-radius: 8px; */
@@ -99,6 +116,8 @@
 
 <body data-spy="scroll" data-target=".fixed-top" class="bg-black ">
 
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
         <div class="container">
@@ -112,6 +131,8 @@
             </button>
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <!-- <div id="visitorCount" class="text-small font-semibold text-red-900"></div> -->
+                <!-- above line dispaly the number of visitors -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link page-scroll text-white hover:text-blue-500" href="#header">Home <span
@@ -306,6 +327,26 @@
 
 
 
+
+    <!-- checking the civistors  -->
+    <!-- <script>
+        // Check if the visitor count is stored in local storage
+        if (localStorage.getItem('visitorCount')) {
+            // If visitor count exists, increment it by 1
+            let count = parseInt(localStorage.getItem('visitorCount'));
+            count++;
+            localStorage.setItem('visitorCount', count);
+        } else {
+            // If visitor count doesn't exist, set it to 1
+            localStorage.setItem('visitorCount', '1');
+        }
+
+        // Get the current visitor count from local storage
+        const visitorCount = parseInt(localStorage.getItem('visitorCount'));
+
+        // Display the visitor count on the page
+        document.getElementById('visitorCount').textContent = `Total visitors: ${visitorCount}`;
+    </script> -->
 
 
     <!-- Scripts -->
