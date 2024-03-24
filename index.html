@@ -76,31 +76,20 @@
             margin-bottom: 10px;
         }
 
-        /* mobile view */
+        /* media query */
         @media (max-width: 768px) {
-
-            /* Styles for mobile devices */
-            .form-1 {
-                padding: 20px;
-                /* Add padding for better spacing */
+            .tech-stack {
+                flex-direction: column;
+                /* Stack cards vertically on smaller screens */
+                align-items: center;
+                /* Center align cards */
             }
 
-            .container {
-                max-width: 100%;
-                /* Make the container full width */
-            }
-
-            h2 {
-                font-size: 24px;
-                /* Reduce font size for better readability */
-            }
-
-            h4,
-            h5 {
-                font-size: 18px;
-                /* Reduce font size for better readability */
-                margin-bottom: 10px;
-                /* Add margin bottom for better spacing between contact details */
+            .card {
+                width: 80%;
+                /* Make cards take up full width of the container */
+                margin-bottom: 20px;
+                /* Add some space between cards */
             }
         }
     </style>
