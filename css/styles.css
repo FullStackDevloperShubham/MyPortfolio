@@ -535,6 +535,9 @@ input[type='checkbox'] {
 	background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../images/header-background_1.jpg') center center no-repeat;
 	background-size: cover;
 	text-align: center;
+	filter: blur(300%);
+	/* backdrop-filter: blur(300px); */
+	/* Adjust the blur radius as needed */
 }
 
 .header .h1-large {
